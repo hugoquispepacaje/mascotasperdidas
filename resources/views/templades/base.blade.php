@@ -1,0 +1,11 @@
+<html>
+        @include('templades.head')
+    <body>
+        @include('templades.header')
+        @include('anuncios.crear_anuncio')
+        @include('anuncios.gestionar_anuncio')
+        @yield('contenido')        
+        @include('templades.footer')
+        @include('templades.scripts')
+    </body>
+</html>

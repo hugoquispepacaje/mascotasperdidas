@@ -1,0 +1,20 @@
+<script>
+    $('#detallesModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget)
+        var nombre = button.data('nombre')
+        var color = button.data('color')
+        var fecha = button.data('fecha')
+        var imagen = button.data('imagen')
+        var descripcion = button.data('descripcion')
+        var nombre_contacto = button.data('nombre_contacto')
+        var numero_contacto = button.data('numero_contacto')
+        var modal = $(this)
+        modal.find('.modal-body #nombre').text(nombre)
+        modal.find('.modal-body #color').text(color)
+        modal.find('.modal-body #fecha').text(fecha)
+        modal.find('.modal-body #imagen').attr("src",imagen)
+        modal.find('.modal-body #descripcion').text(descripcion)
+        modal.find('.modal-body #nombre_contacto').text(nombre_contacto)
+        modal.find('.modal-body #numero_contacto').text(numero_contacto)
+    }) 
+</script>
